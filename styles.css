@@ -1,0 +1,278 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la cabecera */
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0087c1;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #0087c1;
+}
+
+/* Estilos para el banner */
+
+.banner {
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/06/12/16/university-2599254_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Estilos para el contenido */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Estilos para el carousel */
+
+.carousel {
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+
+.carousel-inner {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-indicators li {
+    margin-right: 10px;
+}
+
+.carousel-indicators button {
+    border: none;
+    background-color: #ccc;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    background-color: #0087c1;
+}
+
+/* Estilos para la sección de oferta académica */
+
+.offerings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.offering {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Estilos para la sección de oferta académica */
+
+.offerings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.offering {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.offering img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offering-content {
+    padding: 20px;
+}
+
+.offering-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offering-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offering-button {
+    display: block;
+    background-color: #0087c1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.offering-button:hover {
+    background-color: #006a8c;
+}
+
+/* Estilos para el formulario de contacto */
+
+.contact-form {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-form button[type="submit"] {
+    display: block;
+    background-color: #0087c1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #006a8c;
+}
+
+/* Estilos para el footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-menu {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.footer-menu a:hover {
+    color: #0087c1;
+}
+
+   
